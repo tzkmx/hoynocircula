@@ -1,0 +1,18 @@
+<phpunit
+	bootstrap="tests/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="false"
+	convertWarningsToExceptions="false"
+	>
+	<testsuites>
+		<testsuite>
+			<directory suffix="Test.php">./tests/</directory>
+			<exclude>./tests/wp/</exclude>
+		</testsuite>
+	</testsuites>
+	<logging>
+		<log type="testdox-text" target="php://stdout"/>
+	</logging>
+</phpunit>

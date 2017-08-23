@@ -9,12 +9,29 @@
             "email": "jefrancomix@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Jefrancomix\\HoyNoCircula\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HoyNoCircula\\Tests\\": "tests/"
+        }
+    },
     "require": {
         "fabpot/goutte": "^3.2",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/validator": "^3.3",
+        "doctrine/cache": "^1.6",
+        "doctrine/annotations": "^1.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.3",
         "squizlabs/php_codesniffer": "^3.0"
+    },
+    "scripts": {
+        "test:wp": "phpunit -c wp-phpunit.xml",
+        "test": "phpunit"
     }
 }
