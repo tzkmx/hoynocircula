@@ -8,7 +8,6 @@
 
 namespace Jefrancomix\HoyNoCircula\Enum;
 
-
 class CalidadAireEnum extends AbstractEnum
 {
     const

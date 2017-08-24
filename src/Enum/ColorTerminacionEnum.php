@@ -8,7 +8,6 @@
 
 namespace Jefrancomix\HoyNoCircula\Enum;
 
-
 class ColorTerminacionEnum extends AbstractEnum
 {
     const

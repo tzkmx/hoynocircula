@@ -1,6 +1,7 @@
 <?php
 
 namespace Jefrancomix\HoyNoCircula\Data;
+
 use Symfony\Component\Validator\Constraints as Assert;
 use Jefrancomix\HoyNoCircula\Enum\CalidadAireEnum;
 
@@ -150,7 +151,7 @@ class ReportData
     /**
      * @param string $indiceImeca
      */
-    public function setIndiceImeca($indiceImeca)
+    public function setIndiceImeca( $indiceImeca)
     {
         $this->indiceImeca = $indiceImeca;
     }
